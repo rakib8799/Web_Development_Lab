@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+:root {
+        --font_family: "Poppins", sans-serif;
+        --extraExtraSmall_size: 0.8rem;
+        --extraSmall_size: 1rem;
+        --small_size: 1.2rem;
+        /* --medium_size: 1.5rem; */
+        --large_size: 2rem;
+        /* --extraLarge_size: 2.5rem; */
+        --primary_color: #ffffff;
+        --secondary_color: #3857bd;
+        --optional_color: #b39bfc;
+        --error_color: red;
+        --success_color: seagreen;
+        --width_size: 50vw;
+        --height_size: 100vh;
+        --box_shadow: 5px 8px 10px rgba(0, 0, 0, 0.2);
+        --border: 2px solid;
+}
+body {
+        font-family: var(--font_family);
+        font-size: var(--extraSmall_size);
+        line-height: var(--small_size);
+}
+.container {
+        height: var(--height_size);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+form {
+        width: var(--width_size);
+        padding: var(--large_size);
+        box-shadow: var(--box_shadow);
+}
+
+input,
+select {
+        margin-bottom: var(--extraSmall_size);
+}
+
+input[type="text"],
+input[type="email"],
+select {
+        border: none;
+        outline: none;
+        border-bottom: var(--border) var(--optional_color);
+}
+input[type="text"]:focus,
+input[type="email"]:focus {
+        border-bottom: var(--border) var(--secondary_color);
+}
+
+input[type="submit"],
+input[type="reset"],
+.btn {
+        cursor: pointer;
+        padding: var(--extraExtraSmall_size) var(--extraSmall_size);
+        border-radius: 10px;
+        border: none;
+        background-image: linear-gradient(
+                to right,
+                var(--secondary_color),
+                var(--optional_color)
+        );
+        color: var(--primary_color);
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.btn:hover {
+        background-image: linear-gradient(
+                to left,
+                var(--secondary_color),
+                var(--optional_color)
+        );
+}
+
+.input-group span {
+        font-size: var(--extraExtraSmall_size);
+        color: var(--error_color);
+}
+.input-group span i {
+        color: var(--success_color);
+}
