@@ -65,8 +65,8 @@ if (isset($_SESSION['auth'])) {
                 </td>
             </tr>
             <tr>
-                <td></td>
                 <td><input type="submit" name="register" value="Register"></td>
+                <td><a href="login.php">Already have an account?Login</a></td>
             </tr>
         </table>
     </form>

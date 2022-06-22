@@ -42,13 +42,13 @@ if (mysqli_num_rows($result) === 1) {
                     <span id="email_err"></span>
                 </td>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td><label for="password">Password</label></td>
                 <td>
                     <input type="text" name="password" id="password" value="<?php echo $password; ?>" onkeyup="validatePassword()">
                     <span id="password_err"></span>
                 </td>
-            </tr>
+            </tr> -->
             <tr>
                 <td><label for="contact">Contact No.</label></td>
                 <td>

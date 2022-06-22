@@ -38,8 +38,8 @@ if (isset($_SESSION['auth'])) {
                 </td>
             </tr>
             <tr>
-                <td></td>
                 <td><input type="submit" name="login" value="Login"></td>
+                <td><a href="index.php">Don't have an account?Register</a></td>
             </tr>
         </table>
     </form>

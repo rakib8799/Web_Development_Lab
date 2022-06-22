@@ -2,7 +2,7 @@
 session_start();
 require_once '../config/db.php';
 if (!isset($_SESSION['auth'])) {
-    $_SESSION['message'] = "Login to access dashboard";
+    $_SESSION['message'] = "Login to access Admin dashboard";
     header("Location: ../loginForm.php");
     exit(0);
 } else {
